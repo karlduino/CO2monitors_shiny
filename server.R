@@ -1,4 +1,5 @@
 library(shiny)
+library(ggplot2)
 library(broman)
 
 # Define server logic required to plot various variables against mpg
