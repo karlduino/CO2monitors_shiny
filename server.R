@@ -5,7 +5,9 @@ library(broman)
 sheet_file <-"https://docs.google.com/spreadsheets/d/1U458S6zutd1dDgCGKRRVxzDfe5JfD8_ZA-x3PFkwGUg"
 col_types <- "Tccnnn"
 
-rds_file <- "co2data.rds"
+if(!dir.exists("data")) dir.create("data")
+
+rds_file <- "data/co2data.rds"
 if(file.exists(rds_file)) {
     co2data <- readRDS(rds_file)
 } else {
