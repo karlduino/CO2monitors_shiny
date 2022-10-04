@@ -1,10 +1,6 @@
 library(shiny)
 library(broman)
 
-rds_file <- "data/co2data.rds"
-co2data <- readRDS(rds_file)
-sn <- c("all", names(sort(table(co2data$SerialNumber), decreasing=TRUE)))
-
 # Define server logic required to plot various variables against mpg
 shinyServer(function(input, output) {
 
