@@ -1,4 +1,5 @@
 library(shiny)
+library(plotly)
 
 shinyUI(pageWithSidebar(
 
@@ -11,7 +12,7 @@ shinyUI(pageWithSidebar(
   ),
 
   mainPanel(
-      plotOutput("co2_plot")
+      plotlyOutput("co2_plot")
   )
 
 ))
