@@ -8,7 +8,12 @@ shinyUI(pageWithSidebar(
 
   sidebarPanel(
       selectInput("monitor", "Monitor:",
-                  choices=as.list(setNames(sn, sn)))
+                  choices=as.list(setNames(sn, sn))),
+
+      dateRangeInput("daterange", "Date range:",
+                     start=min(co2data$Timestamp),
+                     end=max(co2data$Timestamp))
+
   ),
 
   mainPanel(
