@@ -25,4 +25,4 @@ co2data <- do.call("rbind", dat)
 co2data <- subset(co2data, SessionID != "543625635471476" |
                   Timestamp > lubridate::ymd_hms("2022-10-06 12:16:59"))
 
-saveRDS(co2data, "co2data.rds")
+saveRDS(co2data, "data/co2data.rds")
