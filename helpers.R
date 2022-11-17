@@ -25,4 +25,10 @@ co2data <- do.call("rbind", dat)
 co2data <- subset(co2data, SessionID != "543625635471476" |
                   Timestamp > lubridate::ymd_hms("2022-10-06 12:16:59"))
 
+# remove last two columns
+co2data <- co2data[ , !(colnames(co2data) %in% c("max_CO2", "ave_CO2"))]
+
+# remove 0 CO2_ppm
+co2data <- co2data[co2data$CO2_ppm > 0,]
+
 saveRDS(co2data, "data/co2data.rds")
