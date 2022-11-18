@@ -11,8 +11,10 @@ shinyUI(pageWithSidebar(
                   choices=as.list(setNames(sn, sn))),
 
       dateRangeInput("daterange", "Date range:",
-                     start=min(co2data$Timestamp),
-                     end=max(co2data$Timestamp))
+                     start=max(co2data$Timestamp)-7*3600*24, # latest - 7 days
+                     end=max(co2data$Timestamp),
+                     min=min(co2data$Timestamp),
+                     max=max(co2data$Timestamp))
 
   ),
 
