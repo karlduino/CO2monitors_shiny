@@ -17,6 +17,7 @@ sheet_files <- c(
     "https://docs.google.com/spreadsheets/d/1UQKRBZdX7gV8dT68Xv3eZicvB9aZ2RP3zrWksY8zbzg",
     "https://docs.google.com/spreadsheets/d/1aN0Z4Vqka-JucJf5OrvNibNUk1Z59IMunllNhUqrBIc",
     "https://docs.google.com/spreadsheets/d/1Xvi5xRPKuGg3hLY4PVPAaMOm5MpTYU2LdwsYknroeHE",
+    "https://docs.google.com/spreadsheets/d/1afAang4zj7f6E1upwX_r43EA1bB5f-eQjwh79telfmk",
     "https://docs.google.com/spreadsheets/d/1U458S6zutd1dDgCGKRRVxzDfe5JfD8_ZA-x3PFkwGUg"
   )
 col_types <- "Tccnnn"
@@ -40,6 +41,8 @@ co2data <- do.call("rbind", dat)
 # trim off garbage (ULC11 with values > 1000)
 co2data <- subset(co2data, SessionID != "543625635471476" |
                   Timestamp > lubridate::ymd_hms("2022-10-06 12:16:59"))
+# trim off data for ULC99 (test runs)
+co2data <- subset(co2data, SerialNumber != "ULC99")
 
 # remove last two columns
 co2data <- co2data[ , !(colnames(co2data) %in% c("max_CO2", "ave_CO2"))]
