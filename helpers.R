@@ -20,7 +20,8 @@ sheet_files <- c(
     "https://docs.google.com/spreadsheets/d/1afAang4zj7f6E1upwX_r43EA1bB5f-eQjwh79telfmk",
     "https://docs.google.com/spreadsheets/d/1B9OJcQtCzOe6_ZXCiv8_NS6stFwJLnB_RXi4Xz1NJJc",
     "https://docs.google.com/spreadsheets/d/1tmw1rfvXwLiPHELCMds9gd21eFW5b2DueOKmGWoJyD4",
-    "https://docs.google.com/spreadsheets/d/1U458S6zutd1dDgCGKRRVxzDfe5JfD8_ZA-x3PFkwGUg"
+    "https://docs.google.com/spreadsheets/d/1-5T07Dha7Rt4L6ntTOjNPsc1gm51JSgfcCOrKRnIlQI",
+    "https://docs.google.com/spreadsheets/d/1z7WXQMTmvyrL7hvCo0tFnTdk9HJ0ebFziD5sUqE1LYE"
   )
 col_types <- "Tccnnn"
 
