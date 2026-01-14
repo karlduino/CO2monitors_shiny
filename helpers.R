@@ -89,6 +89,7 @@ sheet_files <- c(
     "https://docs.google.com/spreadsheets/d/1u1CCwmiYruvnnl2xHs8i_3R9SRuzgq5NgAOVqbxfosg",
     "https://docs.google.com/spreadsheets/d/1UmIdvvvR88HoxuhWFDIq_kZ3Zrs1OkR38c_6wQpmBuM",
     "https://docs.google.com/spreadsheets/d/1GPS0WiwnJtb8JZhpRAN2BzZBsklivWoGZ3MZnbFGvhM",
+    "https://docs.google.com/spreadsheets/d/1d6BHuRc-tfaoBd-VG4To9i_cjgtCF0Q9AJKBjN1D5g8",
     "https://docs.google.com/spreadsheets/d/1KBesbsNsFpTeg1fiGlQn6vvlMqIk1nhUqQiwHzoCon4"
   )
 col_types <- "Tccnnn"
