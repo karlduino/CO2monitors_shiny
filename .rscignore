@@ -101,4 +101,5 @@ data/co2data100.rds
 data/co2data101.rds
 data/co2data102.rds
 data/co2data103.rds
+data/co2data104.rds
 renv.lock
