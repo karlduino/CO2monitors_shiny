@@ -1,3 +1,4 @@
+renv.lock
 data/co2data1.rds
 data/co2data2.rds
 data/co2data3.rds
@@ -131,4 +132,4 @@ data/co2data130.rds
 data/co2data131.rds
 data/co2data132.rds
 data/co2data133.rds
-renv.lock
+data/co2data134.rds
